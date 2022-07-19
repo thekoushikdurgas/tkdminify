@@ -1,0 +1,117 @@
+.minify {
+  width: 95vw;
+  height: 95vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.minify .tkdtextarea {
+  padding: 1em;
+  height: 100%;
+  position: relative;
+  border: none;
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgb(0 0 0 / 15%);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  overflow-y: auto;
+  resize: none;
+  width: 50%;
+}
+.minify .buttonminifys {
+  border-radius: 0 0 10px 10px;
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgb(0 0 0 / 15%);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.minify .tkdtextarea::-webkit-scrollbar {
+  width: 5px;
+}
+.minify .tkdtextarea::-webkit-scrollbar-thumb {
+  background: var(--tkd2);
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.minify .buttonminifys button {
+  white-space: nowrap;
+  transform: scale(1);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 10px;
+  user-select: none;
+  outline: none;
+  height: 35px;
+  border: none;
+  background: var(--background-color);
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 15px #96969680, inset -5px -5px 15px #00000080,
+    3px 3px 5px #000000b3;
+  line-height: 0;
+  color: var(--text-color);
+  padding: 0 10px;
+  margin: 5px;
+}
+.minify .buttonminifys button:hover {
+  transform: scale(1.1);
+}
+.minify .buttonminifys button:active {
+  transform: scale(0.9);
+}
+.minify .minifydeatails .buttonminifydiv {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  justify-content: space-around;
+  border: none;
+  color: var(--text-color);
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgb(0 0 0 / 15%);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 5px 0;
+}
+.minify .buttonminifys button i {
+  font-size: 18px;
+  margin-right: 6px;
+}
+.minify .minifydiv {
+  display: flex;
+  height: -webkit-fill-available;
+}
+.minify .minifydeatails {
+  display: flex;
+}
+.minify .minifydeatails .buttonminifydiv:first-child {
+  border-top-left-radius: 10px;
+}
+.minify .minifydeatails .buttonminifydiv:last-child {
+  border-top-right-radius: 10px;
+}
+@media (max-width: 426px) {
+  .minify .minifydeatails {
+    display: none;
+  }
+  .minify .buttonminifys button i {
+    display: none;
+  }
+  .minify .tkdtextarea:first-child {
+    border-top-left-radius: 10px;
+  }
+  .minify .tkdtextarea:last-child {
+    border-top-right-radius: 10px;
+  }
+}
